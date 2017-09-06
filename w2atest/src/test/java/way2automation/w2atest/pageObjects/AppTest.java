@@ -1,4 +1,4 @@
-package way2automation.w2atest;
+package way2automation.w2atest.pageObjects;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
