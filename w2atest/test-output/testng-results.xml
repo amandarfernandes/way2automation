@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="way2automation" duration-ms="29775" started-at="2017-09-06T17:54:52Z" finished-at="2017-09-06T17:55:22Z">
+  <suite name="way2automation" duration-ms="14692" started-at="2017-09-07T09:55:02Z" finished-at="2017-09-07T09:55:16Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="29775" started-at="2017-09-06T17:54:52Z" finished-at="2017-09-06T17:55:22Z">
-      <class name="way2automation.w2atest.test.AlertsTest">
-        <test-method status="PASS" signature="InitializeDriver()[pri:0, instance:way2automation.w2atest.test.AlertsTest@66a3ffec]" name="InitializeDriver" is-config="true" duration-ms="1847" started-at="2017-09-06T13:55:00Z" finished-at="2017-09-06T13:55:01Z">
+    <test name="Test" duration-ms="14692" started-at="2017-09-07T09:55:02Z" finished-at="2017-09-07T09:55:16Z">
+      <class name="way2automation.w2atest.test.DynamicButtons">
+        <test-method status="PASS" signature="InitializeDriver()[pri:0, instance:way2automation.w2atest.test.DynamicButtons@4c70fda8]" name="InitializeDriver" is-config="true" duration-ms="1957" started-at="2017-09-07T05:55:02Z" finished-at="2017-09-07T05:55:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitializeDriver -->
-        <test-method status="PASS" signature="f(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:way2automation.w2atest.test.AlertsTest@66a3ffec]" name="f" duration-ms="8508" started-at="2017-09-06T13:55:01Z" finished-at="2017-09-06T13:55:10Z">
+        <test-method status="PASS" signature="f(java.lang.String, java.lang.String)[pri:0, instance:way2automation.w2atest.test.DynamicButtons@4c70fda8]" name="f" duration-ms="12721" started-at="2017-09-07T05:55:04Z" finished-at="2017-09-07T05:55:16Z">
           <params>
             <param index="0">
               <value>
@@ -21,62 +21,13 @@
             <param index="1">
               <value>
                 <![CDATA[amanda23]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Amanda Fernandes]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- way2automation.w2atest.test.AlertsTest -->
-      <class name="way2automation.w2atest.test.LoginAsValidUser">
-        <test-method status="PASS" signature="InitializeDriver()[pri:0, instance:way2automation.w2atest.test.LoginAsValidUser@3e6fa38a]" name="InitializeDriver" is-config="true" duration-ms="3456" started-at="2017-09-06T13:54:52Z" finished-at="2017-09-06T13:54:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitializeDriver -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:way2automation.w2atest.test.LoginAsValidUser@3e6fa38a]" name="login" duration-ms="4266" started-at="2017-09-06T13:54:55Z" data-provider="getUser" finished-at="2017-09-06T13:55:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[afernandes]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[amanda23]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- way2automation.w2atest.test.LoginAsValidUser -->
-      <class name="way2automation.w2atest.test.RegisterAsUser">
-        <test-method status="PASS" signature="InitializeDriver()[pri:0, instance:way2automation.w2atest.test.RegisterAsUser@d8355a8]" name="InitializeDriver" is-config="true" duration-ms="1811" started-at="2017-09-06T13:55:10Z" finished-at="2017-09-06T13:55:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- InitializeDriver -->
-        <test-method status="PASS" signature="registerUser(java.lang.String, java.lang.String)[pri:0, instance:way2automation.w2atest.test.RegisterAsUser@d8355a8]" name="registerUser" duration-ms="9839" started-at="2017-09-06T13:55:12Z" finished-at="2017-09-06T13:55:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[afernandes]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[amanda23]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-      </class> <!-- way2automation.w2atest.test.RegisterAsUser -->
+      </class> <!-- way2automation.w2atest.test.DynamicButtons -->
     </test> <!-- Test -->
   </suite> <!-- way2automation -->
 </testng-results>

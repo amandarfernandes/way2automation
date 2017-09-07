@@ -6,9 +6,10 @@
 	<parameter name="name" value="Amanda Fernandes" />
 	<test name="Test">
     <classes>
-	    	<class name="way2automation.w2atest.test.LoginAsValidUser"/>
+	   <!--  	<class name="way2automation.w2atest.test.LoginAsValidUser"/>
     		<class name="way2automation.w2atest.test.AlertsTest" />
-		<class name="way2automation.w2atest.test.RegisterAsUser" />
+		<class name="way2automation.w2atest.test.RegisterAsUser" />-->
+		<class name="way2automation.w2atest.test.DynamicButtons" />
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [way2automation]">
+  <parameter name="password" value="amanda23"/>
+  <parameter name="name" value="Amanda Fernandes"/>
+  <parameter name="username" value="afernandes"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="way2automation.w2atest.test.DynamicButtons">
+        <methods>
+          <include name="InitializeDriver"/>
+          <include name="f" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- way2automation.w2atest.test.DynamicButtons -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [way2automation] -->
