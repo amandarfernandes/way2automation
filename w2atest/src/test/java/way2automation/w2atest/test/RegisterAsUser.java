@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import way2automation.w2atest.pageObjects.RegistrationPage;
@@ -15,19 +15,21 @@ import way2automation.w2atest.resources.Base;
 
 
 public class RegisterAsUser extends Base {
-	@Test
-	@Parameters({"username","password"})
-	public void registerUser(String userN, String userP) 
+	
+	@BeforeMethod
+	public void loginValid()
 	{
-	  LoginAsValidUser vu = new LoginAsValidUser();
-	  vu.login(userN, userP);
-
-	  //Navigate to the Registration page
-	  WebDriverWait w = new WebDriverWait(driver,10);
-	  WebElement regItem = w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='row']>div:nth-child(5)>ul>li>a")));
-
-	  regItem.click();
-	  RegistrationPage rp = new RegistrationPage(driver);
+	LoginAsValidUser vu = new LoginAsValidUser();
+	vu.login(TEST_USER, TEST_PASSWORD);
+	WebDriverWait w = new WebDriverWait(driver,10);
+	WebElement testItem = w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='row']>div:nth-child(5)>ul>li>a")));
+	testItem.click();
+	}
+	
+	@Test
+	public void registerUser() 
+	{
+	   RegistrationPage rp = new RegistrationPage(driver);
 	  //verify on Registration page
 	  Assert.assertTrue(rp.isPageOpen());
 	  

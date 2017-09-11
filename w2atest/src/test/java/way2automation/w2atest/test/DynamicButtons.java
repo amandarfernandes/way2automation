@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,21 +13,20 @@ import way2automation.w2atest.resources.Base;
 
 public class DynamicButtons extends Base {
 
+	@BeforeMethod	
+	public void loginValid()
+	{
+	LoginAsValidUser vu = new LoginAsValidUser();
+	vu.login(TEST_USER, TEST_PASSWORD);
+	//Navigate to the page
+	WebDriverWait w = new WebDriverWait(driver,10);
+	WebElement testItem = w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='row']>div:nth-child(4)>ul>li:nth-of-type(1)>a")));
+	testItem.click();
+	}
+	
 	@Test
-	@Parameters({"username","password"})
-	public void f(String userN,String userP) {
-		//login as a valid user 
-		LoginAsValidUser vu = new LoginAsValidUser();
-		vu.login(userN, userP);
-		
-		  //Navigate to the Dynamic Buttons page
-		  WebDriverWait w = new WebDriverWait(driver,10);
-		  WebElement testItem = w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='row']>div:nth-child(4)>ul>li:nth-of-type(1)>a")));
-
-		  testItem.click();
-		  //verify on Dynamic Buttons page
-		  Assert.assertTrue(driver.findElement(By.cssSelector("h1.heading:nth-of-type(1)")).getText().equals("Submit Button Clicked"));
-		  
+	public void f() {
+	
 		  //test dynamic  button with constant starting id
 		  driver.switchTo().frame(0);
 		  driver.findElement(By.xpath(".//input[@type=\"text\"]")).sendKeys("test1");
