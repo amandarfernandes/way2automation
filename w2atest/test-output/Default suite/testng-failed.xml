@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="way2automation.w2atest.test.ToolTipsTest">
+      <class name="way2automation.w2atest.test.LoginAsValidUser">
         <methods>
-          <include name="InitializeDriver"/>
-          <include name="loginValid"/>
-          <include name="TTTest3"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- way2automation.w2atest.test.ToolTipsTest -->
+      </class> <!-- way2automation.w2atest.test.LoginAsValidUser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

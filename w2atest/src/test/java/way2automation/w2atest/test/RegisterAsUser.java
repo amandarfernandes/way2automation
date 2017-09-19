@@ -2,6 +2,7 @@ package way2automation.w2atest.test;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -9,21 +10,28 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import way2.automation.w2atest.appModules.SignInAction;
+import way2automation.w2atest.pageObjects.HomePage;
 import way2automation.w2atest.pageObjects.RegistrationPage;
 import way2automation.w2atest.resources.Base;
 
 
 
 public class RegisterAsUser extends Base {
-	
+	private WebDriver driver;
 	@BeforeMethod
 	public void loginValid()
 	{
-	LoginAsValidUser vu = new LoginAsValidUser();
+		driver = InitializeDriver();
+		driver.get(URL);
+		SignInAction.execute(driver,"registration");
+		HomePage hp = new HomePage(driver);
+		
+	/*LoginAsValidUser vu = new LoginAsValidUser();
 	vu.login(TEST_USER, TEST_PASSWORD);
 	WebDriverWait w = new WebDriverWait(driver,10);
 	WebElement testItem = w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div[class='row']>div:nth-child(5)>ul>li>a")));
-	testItem.click();
+	testItem.click();*/
 	}
 	
 	@Test

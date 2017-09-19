@@ -1,0 +1,6 @@
+14:59:59.026 [main] INFO  way2automation.w2atest.resources.Base - Password Entered: amanda23
+14:59:59.162 [main] INFO  way2automation.w2atest.resources.Base - Clicked Login Button!
+15:00:01.798 [main] INFO  way2automation.w2atest.resources.Base - Navigating to Alerts Page
+15:00:01.799 [main] INFO  way2automation.w2atest.resources.Base - Simple Alert Test
+15:00:02.201 [main] INFO  way2automation.w2atest.resources.Base - Simple Alert displayed on button clcik
+15:00:02.435 [main] INFO  way2automation.w2atest.resources.Base - Testing Input Alert

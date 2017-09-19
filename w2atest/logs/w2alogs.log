@@ -1,0 +1,3 @@
+15:00:24.035 [main] INFO  way2automation.w2atest.resources.Base - Input Alert Displayed
+15:00:24.054 [main] INFO  way2automation.w2atest.resources.Base - Sent name to input - Amanda
+15:00:24.288 [main] INFO  way2automation.w2atest.resources.Base - Alert Message - Hello Amanda! How are you today?

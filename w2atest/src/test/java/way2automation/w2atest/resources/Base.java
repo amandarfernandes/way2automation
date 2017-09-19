@@ -12,20 +12,22 @@ import org.testng.annotations.BeforeMethod;
 public class Base {
 	public static final String TEST_USER="afernandes";
 	public static final  String TEST_PASSWORD="amanda23";
-	
+	public static final String URL="http://way2automation.com/way2auto_jquery/index.php";
 	public static WebDriver driver;
 
-	@BeforeMethod
-	public void InitializeDriver() {
+	//@BeforeMethod
+	public WebDriver InitializeDriver() {
 		System.setProperty("webdriver.chrome.driver", "/Users/admin/selenium/chromedriver");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return driver;
 	}
 
-	@AfterMethod
+	//@AfterMethod
 	public void tearDown() {
 		driver.close();
+		driver.quit();
 		driver=null;
 	}
 }
